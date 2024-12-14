@@ -16,7 +16,7 @@ export const Home = () => {
 <div className="pages">      
       <div className="segment1">
         <div className="segment1-1">
-          <h1>Welcome Pragati   2K25,<br />Battleground of Students</h1>
+          <h1>Welcome Pragati  200K25,<br />Battleground of Students</h1>
           <p>Unleash Brainwave's potential & show <br />the power of your knowledge</p>
 
         </div>
