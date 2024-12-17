@@ -29,7 +29,7 @@ function NavBar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <NavLink exact to="/" className="nav-logo">
-          <span>SPECTRA 2025</span>
+          <span>PRAGATI 2025</span>
           
         </NavLink>
 
