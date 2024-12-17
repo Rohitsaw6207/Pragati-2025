@@ -1,0 +1,107 @@
+/* General container styling */
+.schedule-container {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title styling */
+  .schedule-title {
+    font-size: 2.5rem;
+    color: #9ae202;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  /* Schedule table container */
+  .schedule-table {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Individual row styling */
+  .schedule-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .schedule-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Time column */
+  .schedule-time {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #9ae202;
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Event column */
+  .schedule-event {
+    font-size: 1rem;
+    flex: 2;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Location column */
+  .schedule-location {
+    font-size: 0.9rem;
+    font-style: italic;
+    flex: 1;
+    text-align: center;
+    color: #9ae202;
+  }
+  
+  /* Hover effect for rows */
+  .schedule-row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .schedule-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .schedule-time,
+    .schedule-event,
+    .schedule-location {
+      margin-bottom: 0.5rem;
+    }
+  
+    .schedule-time {
+      font-size: 1.2rem;
+    }
+  
+    .schedule-event {
+      font-size: 1.1rem;
+    }
+  
+    .schedule-location {
+      font-size: 1rem;
+    }
+  }
+  
