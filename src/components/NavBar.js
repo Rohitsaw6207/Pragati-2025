@@ -66,6 +66,7 @@ function NavBar() {
               Event
             </NavLink>
           </li>
+
           {/* Added room allocation page  */}
           <li className="nav-item">
             <NavLink
