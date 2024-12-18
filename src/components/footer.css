@@ -1,9 +1,16 @@
 /* Basic footer styling */
+h3{
+    color:white;
+}
+
 .site-footer {
-    background-color: #26272b;
+    background-color: #000000c2;
    color:#737373;
-    padding: 40px 0;
+    padding: 20px 0;
   }
+
+
+
   
   .site-footer a {
     color:#737373;
@@ -11,6 +18,7 @@
   }
   .row{
     display: flex;
+    gap: 40px;
   }
   
   .site-footer a:hover {
@@ -107,6 +115,10 @@
   .social-icons a:hover {
     color: #ddd;
   }
+
+
+
+
   
   /* Responsive adjustments */
   @media (max-width: 767px) {
@@ -130,5 +142,107 @@
     .footer-bottom-right {
       justify-content: center;
     }
+  }
+  
+
+
+.f-div-0{
+    width: 60%;
+    padding:10px;
+    text-align: justify;
+}
+.f-div-1{
+    width: 20%;
+    padding:10px;
+    
+}
+.f-div-2{
+    width: 20%;
+    padding:10px;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 767px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-bottom-left {
+      margin-bottom: 10px;
+    }
+  
+    .footer-bottom-right {
+      justify-content: center;
+    }
+  
+    .f-div-0, .f-div-1, .f-div-2 {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+h3{
+    padding:5px
+}
+    .f-div-0 h3{
+        text-align: center;
+    }
+
+    .f-div-1 ul{
+        list-style: none; /* Removes bullets */
+  padding: 0;       /* Removes default padding */
+  margin: 0; 
+    }
+  .f-div-2 ul{
+        list-style: none; /* Removes bullets */
+  padding: 0;       /* Removes default padding */
+  margin: 0; 
+    }
+  
+    .f-div-0 {
+      text-align: justify;
+      margin: auto;
+      width: 90%;
+    }
+  }
+  
+  /* Further adjustments for very small devices */
+  @media (max-width: 480px) {
+    .row {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .social-icons li {
+      margin-left: 10px;
+    }
+  
+    .footer-section h6 {
+      font-size: 16px;
+    }
+  
+    .footer-section p,
+    .footer-section ul li a {
+      font-size: 12px;
+    }
+  }
+  /* Fix footer at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Removes default body margin */
+  }
+  
+  .site-footer {
+    margin-top: auto;
   }
   
