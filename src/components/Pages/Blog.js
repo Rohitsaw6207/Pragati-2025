@@ -1,9 +1,19 @@
 import React from "react";
+import Footer from '../Footer';
 
 export const Blog = () => {
   return (
     <div>
-      <h1>Blog</h1>
+       <div className="pages"> 
+     <div className="segment11">
+        <div className="segment11-1">
+          <h1>Blogs</h1>
+          
+
+        </div>
+      </div>
+      </div>
+      <Footer/>
     </div>
   );
 };
