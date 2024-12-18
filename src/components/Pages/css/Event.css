@@ -1,0 +1,21 @@
+/* =============== INNOVATION PAGE STYLES =============== */
+.innovation-container {
+    padding: 2rem;
+    background: #f8f8f8;
+    min-height: 100vh;
+  }
+  
+  .innovation-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .card__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+  }

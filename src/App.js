@@ -11,6 +11,14 @@ import { Roomstart } from "./components/Pages/Roomstart";
 
 import MouseShadow from "./components/MouseShadow";
 
+
+import Innovation from "./components/Pages/Innovation";
+import CodingAndEngineering from "./components/Pages/CodingAndEngineering";
+import QuizAndMathAptitude from "./components/Pages/QuizAndMathAptitude";
+import Gaming from "./components/Pages/Gaming";
+import Robotics from "./components/Pages/Robotics";
+
+
 function App() {
   return (
     <>
@@ -25,6 +33,13 @@ function App() {
           <Route path="/allocation" element={<Allocation />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/roomstart" element={<Roomstart />} />
+
+          <Route path="/innovation" element={<Innovation />} />
+        <Route path="/coding-and-engineering" element={<CodingAndEngineering />} />
+        <Route path="/quiz-and-math-aptitude" element={<QuizAndMathAptitude />} />
+        <Route path="/gaming" element={<Gaming />} />
+        <Route path="/robotics" element={<Robotics />} />
+
         </Routes>
         {/* </div> */}
       </Router>

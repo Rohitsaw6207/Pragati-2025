@@ -63,7 +63,7 @@ function NavBar() {
               className="nav-links"
               onClick={handleClick}
             >
-              Blog
+              Event
             </NavLink>
           </li>
           {/* Added room allocation page  */}
