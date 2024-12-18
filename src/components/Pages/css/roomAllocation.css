@@ -3,7 +3,7 @@
   background-color: #1e1e2f;
   color: #ffffff;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 0;
   font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,8 @@
 /* Title styling */
 .room-allocation-title {
   font-size: 2.5rem;
-  color: #ff9800;
+  color: #33b70e;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   text-align: center;
@@ -29,6 +30,7 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
 
 /* Table header */
@@ -45,7 +47,7 @@
 .header-item {
   flex: 1;
   text-align: center;
-  color: #ff9800;
+  color: #09d42b;
   font-size: 1rem;
 }
 
@@ -73,13 +75,13 @@
 .slide-from-left {
   opacity: 0;
   transform: translateX(-100%);
-  animation: slideInLeft 0.6s ease forwards;
+  animation: slideInLeft 2s ease forwards;
 }
 
 .slide-from-right {
   opacity: 0;
   transform: translateX(100%);
-  animation: slideInRight 0.6s ease forwards;
+  animation: slideInRight 2s ease forwards;
 }
 
 @keyframes slideInLeft {

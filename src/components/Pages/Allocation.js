@@ -40,6 +40,7 @@ export const Allocation = () => {
           </div>
         ))}
       </div>
+
       <Footer />
     </div>
   );
