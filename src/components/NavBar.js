@@ -66,6 +66,7 @@ function NavBar() {
               Blog
             </NavLink>
           </li>
+
           {/* Added room allocation page  */}
           <li className="nav-item">
             <NavLink

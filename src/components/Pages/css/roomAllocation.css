@@ -1,19 +1,20 @@
 /* General container styling */
 .room-allocation-container {
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* Light text */
+  background-color: #1e1e2f;
+  color: #ffffff;
   min-height: 100vh;
   padding: 2rem;
   font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
 }
 
 /* Title styling */
 .room-allocation-title {
   font-size: 2.5rem;
-  color: #9ae202;
+  color: #ff9800;
   margin-bottom: 2rem;
   text-transform: uppercase;
   text-align: center;
@@ -23,8 +24,8 @@
 /* Table container */
 .room-allocation-table {
   width: 90%;
-  max-width: 800px;
-  border-radius: 10px;
+  max-width: 900px;
+  border-radius: 12px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -44,7 +45,7 @@
 .header-item {
   flex: 1;
   text-align: center;
-  color: #9ae202;
+  color: #ff9800;
   font-size: 1rem;
 }
 
@@ -54,7 +55,7 @@
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .table-row:last-child {
@@ -68,14 +69,45 @@
   color: #ffffff;
 }
 
+/* Animations for odd and even rows */
+.slide-from-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+.slide-from-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 0.6s ease forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Hover effect on rows */
 .table-row:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
+  .room-allocation-table {
+    width: 95%;
+  }
+
   .table-header, .table-row {
     flex-direction: column;
     align-items: center;
@@ -84,13 +116,5 @@
   .header-item, .row-item {
     text-align: left;
     padding: 0.5rem 0;
-  }
-
-  .table-header {
-    padding: 1rem 0.5rem;
-  }
-
-  .table-row {
-    padding: 1rem 0.5rem;
   }
 }
