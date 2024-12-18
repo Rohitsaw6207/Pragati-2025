@@ -1,0 +1,96 @@
+/* General container styling */
+.room-allocation-container {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.room-allocation-title {
+  font-size: 2.5rem;
+  color: #9ae202;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Table container */
+.room-allocation-table {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Table header */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-item {
+  flex: 1;
+  text-align: center;
+  color: #9ae202;
+  font-size: 1rem;
+}
+
+/* Table rows */
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.row-item {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Hover effect on rows */
+.table-row:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.01);
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .table-header, .table-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-item, .row-item {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .table-header {
+    padding: 1rem 0.5rem;
+  }
+
+  .table-row {
+    padding: 1rem 0.5rem;
+  }
+}

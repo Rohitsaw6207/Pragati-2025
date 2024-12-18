@@ -30,7 +30,6 @@ function NavBar() {
       <div className="nav-container">
         <NavLink exact to="/" className="nav-logo">
           <span>PRAGATI 2025</span>
-          
         </NavLink>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -67,6 +66,19 @@ function NavBar() {
               Blog
             </NavLink>
           </li>
+          {/* Added room allocation page  */}
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/allocation"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Allocation
+            </NavLink>
+          </li>
+
           <li className="nav-item">
             <NavLink
               exact
@@ -80,7 +92,11 @@ function NavBar() {
           </li>
         </ul>
 
-        <div className="nav-icon" onClick={handleClick} aria-label="Toggle Menu">
+        <div
+          className="nav-icon"
+          onClick={handleClick}
+          aria-label="Toggle Menu"
+        >
           {click ? <HamburgetMenuClose /> : <HamburgetMenuOpen />}
         </div>
       </div>
